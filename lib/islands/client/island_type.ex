@@ -7,7 +7,7 @@ defmodule Islands.Client.IslandType do
   @course_ref Application.get_env(@app, :course_ref)
 
   @moduledoc """
-  Island types for clients of the _Game of Islands_.
+  Converts island codes to island types in the _Game of Islands_.
   \n##### #{@course_ref}
   """
 

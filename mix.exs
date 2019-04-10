@@ -4,7 +4,7 @@ defmodule Islands.Client.IslandType.MixProject do
   def project do
     [
       app: :islands_client_island_type,
-      version: "0.1.0",
+      version: "0.1.1",
       elixir: "~> 1.7",
       start_permanent: Mix.env() == :prod,
       name: "Islands Client Island Type",
@@ -21,7 +21,7 @@ defmodule Islands.Client.IslandType.MixProject do
 
   defp description do
     """
-    Island types for clients of the Game of Islands.
+    Converts island codes to island types in the Game of Islands.
     """
   end
 

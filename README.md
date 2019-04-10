@@ -1,6 +1,6 @@
 # Islands Client Island Type
 
-Island types for clients of the _Game of Islands_.
+Converts island codes to island types in the _Game of Islands_.
 
 ## Installation
 
