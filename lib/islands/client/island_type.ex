@@ -13,6 +13,15 @@ defmodule Islands.Client.IslandType do
 
   alias Islands.Island
 
+  @doc """
+  Converts an island code to an island type.
+
+  ## Examples
+
+      iex> alias Islands.Client.IslandType
+      iex> IslandType.new("a")
+      :atoll
+  """
   @spec new(String.codepoint()) :: Island.type() | {:error, atom}
   def new(island_type_code)
   def new("a"), do: :atoll
