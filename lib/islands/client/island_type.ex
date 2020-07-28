@@ -2,13 +2,9 @@
 # │ Inspired by the course "Elixir for Programmers" by Dave Thomas. │
 # └─────────────────────────────────────────────────────────────────┘
 defmodule Islands.Client.IslandType do
-  use PersistConfig
-
-  @course_ref Application.get_env(@app, :course_ref)
-
   @moduledoc """
   Converts island codes to island types in the _Game of Islands_.
-  \n##### #{@course_ref}
+  \n##### #{Islands.Config.get(:course_ref)}
   """
 
   alias Islands.Island
