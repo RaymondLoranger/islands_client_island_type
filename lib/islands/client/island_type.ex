@@ -4,7 +4,8 @@
 defmodule Islands.Client.IslandType do
   @moduledoc """
   Converts island codes to island types in the _Game of Islands_.
-  \n##### #{Islands.Config.get(:course_ref)}
+
+  ##### Inspired by the course [Elixir for Programmers](https://codestool.coding-gnome.com/courses/elixir-for-programmers) by Dave Thomas.
   """
 
   alias Islands.Island
