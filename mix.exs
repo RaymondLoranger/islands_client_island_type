@@ -4,7 +4,7 @@ defmodule Islands.Client.IslandType.MixProject do
   def project do
     [
       app: :islands_client_island_type,
-      version: "0.1.11",
+      version: "0.1.12",
       elixir: "~> 1.11",
       start_permanent: Mix.env() == :prod,
       name: "Islands Client Island Type",
@@ -46,9 +46,7 @@ defmodule Islands.Client.IslandType.MixProject do
     [
       {:dialyxir, "~> 1.0", only: :dev, runtime: false},
       {:ex_doc, "~> 0.22", only: :dev, runtime: false},
-      {:islands_island, "~> 0.1"},
-      {:mix_tasks,
-       github: "RaymondLoranger/mix_tasks", only: :dev, runtime: false}
+      {:islands_island, "~> 0.1"}
     ]
   end
 end
