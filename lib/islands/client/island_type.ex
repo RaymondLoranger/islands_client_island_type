@@ -3,7 +3,7 @@
 # └─────────────────────────────────────────────────────────────────┘
 defmodule Islands.Client.IslandType do
   @moduledoc """
-  Converts island codes into island types in the _Game of Islands_.
+  Converts island type codes into island types in the _Game of Islands_.
   """
 
   alias Islands.Island
