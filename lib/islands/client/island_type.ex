@@ -8,8 +8,14 @@ defmodule Islands.Client.IslandType do
 
   alias Islands.Island
 
+  @typedoc ~s|Island type code e.g. "a" or "d"|
+  # Size of bitstring is 8 bits => 1 byte!
+  @type code :: <<_::8>>
+  @typedoc "Island type"
+  @type t :: Island.type()
+
   @doc """
-  Converts an island code into an island type.
+  Converts `island_type_code` into an island type.
 
   ## Examples
 
@@ -17,7 +23,7 @@ defmodule Islands.Client.IslandType do
       iex> IslandType.new("a")
       :atoll
   """
-  @spec new(String.codepoint()) :: Island.type() | {:error, atom}
+  @spec new(code) :: t | {:error, atom}
   def new(island_type_code)
   def new("a"), do: :atoll
   def new("d"), do: :dot
