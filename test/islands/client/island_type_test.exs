@@ -11,7 +11,7 @@ defmodule Islands.Client.IslandTypeTest do
     end
 
     test "returns an error tuple given an invalid island type code" do
-      assert IslandType.new('a') == {:error, :invalid_island_type_code}
+      assert IslandType.new(~c"a") == {:error, :invalid_island_type_code}
     end
   end
 end
