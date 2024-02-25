@@ -9,8 +9,7 @@ defmodule Islands.Client.IslandType do
   alias Islands.Island
 
   @typedoc ~s|Island type code e.g. "a" or "d"|
-  # Size of bitstring is 8 bits => 1 byte!
-  @type code :: <<_::8>>
+  @type code :: byte
   @typedoc "Island type"
   @type t :: Island.type()
 
