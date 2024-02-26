@@ -9,7 +9,7 @@ defmodule Islands.Client.IslandType do
   alias Islands.Island
 
   @typedoc ~s|Island type code e.g. "a" or "d"|
-  @type code :: byte
+  @type code :: <<_::8>>
   @typedoc "Island type"
   @type t :: Island.type()
 
