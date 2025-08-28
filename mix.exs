@@ -4,7 +4,7 @@ defmodule Islands.Client.IslandType.MixProject do
   def project do
     [
       app: :islands_client_island_type,
-      version: "0.1.24",
+      version: "0.1.25",
       elixir: "~> 1.11",
       start_permanent: Mix.env() == :prod,
       name: "Islands Client Island Type",
