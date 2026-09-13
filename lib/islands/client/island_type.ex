@@ -22,7 +22,7 @@ defmodule Islands.Client.IslandType do
       iex> IslandType.new("a")
       :atoll
   """
-  @spec new(code) :: t | {:error, atom}
+  @spec new(code) :: t | {:error, :invalid_island_type_code}
   def new(island_type_code)
   def new("a"), do: :atoll
   def new("d"), do: :dot
